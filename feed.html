@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+<style>
+    body {
+        background-color: #f4f6f9;
+        margin: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    header {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+    }
+
+    .usuario {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #1e3c72;
+    }
+
+    .username {
+        color: gray;
+        font-size: 0.9rem;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .acoes {
+        display: flex;
+        gap: 20px;
+        color: gray;
+        margin-top: 15px;
+        font-size: 0.95rem;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <header>
+        <h1>Rede Social</h1>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Buscar</a>
+            <a href="#">Perfil</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <section class="card">
+
+        <h2>Novo Post</h2>
+
+        <div class="usuario">
+            <img src="img/usuario.png" alt="Avatar" class="avatar">
+
+            <div>
+                <strong>Luis Esteves</strong><br>
+                <span class="username">@luisesteves</span>
+            </div>
+        </div>
+
+        <textarea rows="4" placeholder="O que você está pensando?"></textarea>
+
+        <button type="button">Publicar</button>
+
+    </section>
+
+    <section>
+
+        <h2>Posts</h2>
+
+        <article class="card">
+
+            <div class="usuario">
+                <img src="img/usuario.png" alt="Avatar" class="avatar">
+
+                <div>
+                    <strong>Komoo Oliveira</strong><br>
+                    <span class="username">@komoooliveira</span>
+                </div>
+            </div>
+
+            <p>
+                Minezin hoje? Quem vem????
+            </p>
+
+            <div class="acoes">
+                <span> Curtidas</span>
+                <span> Comentários</span>
+            </div>
+
+        </article>
+
+        <article class="card">
+
+            <div class="usuario">
+                <img src="img/usuario.png" alt="Avatar" class="avatar">
+
+                <div>
+                    <strong>Luis Lages</strong><br>
+                    <span class="username">@lagesluis</span>
+                </div>
+            </div>
+
+            <p>
+                Acabei de assistir Homem-Aranha: Sem Volta Para Casa...
+            </p>
+
+            <div class="acoes">
+                <span> Curtidas</span>
+                <span> Comentários</span>
+            </div>
+
+        </article>
+
+    </section>
+
+</div>
+
+
+</body>
+</html>
+
+
+</div>
+
+</body>
+</html>
